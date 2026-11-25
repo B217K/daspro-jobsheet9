@@ -15,5 +15,6 @@ public class ArrayNilai07 {
             System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" +
             status + ")");
         }
+        input.close();
     }
 }
