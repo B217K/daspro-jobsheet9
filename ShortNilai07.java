@@ -15,8 +15,10 @@ public class ShortNilai07 {
             System.out.print("Masukkan nilai indeks ke-" + i + ": ");
             nilai[i] = sc.nextInt();
         }
+
         System.out.print("Masukkan nilai yang ingin dicari: ");
         int key = sc.nextInt();
+
         int posisi = -1;
 
         for (int i = 0; i < nilai.length; i++) {
@@ -24,10 +26,16 @@ public class ShortNilai07 {
                 posisi = i;
                 break;
             }
-            if (posisi != -1) {
-                System.out.println("Nilai " + key + " ditemukan pada indeks: " + posisi);
-            }
-            sc.close();
         }
+
+        if (posisi != -1) {
+            System.out.println("Nilai " + key + " ditemukan pada indeks ke-" + posisi);
+        } else {
+            System.out.println("Nilai yang dicari (" + key + ") tidak ditemukan dalam array.");
+            System.out.println("Pencarian dilakukan pada " + jumlah + " elemen array.");
+            System.out.println("Silakan periksa kembali nilai yang Anda masukkan.");
+        }
+
+        sc.close();
     }
 }
