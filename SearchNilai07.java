@@ -21,10 +21,11 @@ public class SearchNilai07 {
         for (int i = 0; i < nilai.length; i++) {
             if (nilai[i] == key) {
                 posisi = i;
-            }
-            if (posisi != -1) {
                 System.out.println("Nilai " + key + " ditemukan pada indeks: " + posisi);
             }
+        }
+        if (posisi == -1) {
+            System.out.println("Nilai "+ key + " tidak ditemukan!");
         }
         sc.close();
     }
