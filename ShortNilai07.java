@@ -17,6 +17,5 @@ public class ShortNilai07 {
             }
         }
         System.out.println(Arrays.toString(nilai));
-
     }
 }
